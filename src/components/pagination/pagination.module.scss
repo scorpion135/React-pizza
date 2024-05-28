@@ -1,0 +1,54 @@
+.pagination {
+  li {
+    display: inline-flex;
+
+    a {
+      color: #fe5f1e;
+      text-align: center;
+      width: 45px;
+      height: 45px;
+      line-height: 42px;
+      padding: 2px;
+      border: 1px solid #fe5f1e;
+      border-radius: 30px;
+      margin-right: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #fe5f1e;
+        color: #fff;
+      }
+    }
+  }
+
+  li:first-child {
+    a {
+      border: none;
+
+      &:hover {
+        background-color: #fff;
+        color: #fe5f1e;
+      }
+    }
+  }
+
+  li:last-child {
+    a {
+      border: none;
+
+      &:hover {
+        background-color: #fff;
+        color: #fe5f1e;
+      }
+    }
+  }
+
+  :global {
+    .selected {
+      a {
+        background-color: #fe5f1e;
+        color: #fff;
+      }
+    }
+  }
+}
